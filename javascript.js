@@ -46,7 +46,7 @@ function darkmode () {
 
 function lightmode () {
 	leftside.style.backgroundImage = "linear-gradient("+ "to right, " + "white, white"+")";
-	rightside.style.backgroundImage="url(wall.jpg)";
+	rightside.style.backgroundImage="url(wall3.jpg)";
 	row.style.color = "black";
 	nav.style.backgroundImage = "linear-gradient("+ "to right, " + "white, white"+")";
 	document.getElementById("theme").textContent="dark theme \u263d";
