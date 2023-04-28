@@ -22,7 +22,8 @@
     display: flex;
     align-items:end;
 
-    background-image: url('\wall.jpg');
+    background: url('wall3.jpg') no-repeat fixed;
+    background-size: cover
 
 }
 
