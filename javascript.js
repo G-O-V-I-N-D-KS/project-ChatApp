@@ -12,12 +12,12 @@ function navSelect () {
 
 function openNav () {
 	nav.style.display = "block";
-	console.log("hi1");
+	console.log("open");
 }
 
 function closeNav () {
 	nav.style.display = "none";
-	console.log("hi2");
+	console.log("close");
 }
 
 let i = 0;
