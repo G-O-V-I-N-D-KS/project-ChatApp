@@ -1,2 +1,2 @@
-# project-ChatApp
+# Project-ChatApp
 Project 1
