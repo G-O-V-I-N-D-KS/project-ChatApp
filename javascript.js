@@ -38,7 +38,8 @@ function mode () {
 
 function darkmode () {
 	leftside.style.backgroundImage = "linear-gradient("+ "to right, " + "#28313B, #485461"+")";
-	rightside.style.backgroundImage="url(wall2.webp)";
+	rightside.style.background="url('wall2.webp') no-repeat fixed";
+	rightside.style.backgroundSize = "cover";
 	row.style.color = "white";
 	nav.style.backgroundImage = "linear-gradient("+ "to right, " + "#2A5470, #4C4177"+")";
 	document.getElementById("theme").textContent=`light theme \u263c`;
@@ -46,7 +47,8 @@ function darkmode () {
 
 function lightmode () {
 	leftside.style.backgroundImage = "linear-gradient("+ "to right, " + "white, white"+")";
-	rightside.style.backgroundImage="url(wall3.jpg)";
+	rightside.style.background="url('wall3.jpg') no-repeat fixed";
+	rightside.style.backgroundSize = "cover";
 	row.style.color = "black";
 	nav.style.backgroundImage = "linear-gradient("+ "to right, " + "white, white"+")";
 	document.getElementById("theme").textContent="dark theme \u263d";
