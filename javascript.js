@@ -42,7 +42,7 @@ function darkmode () {
 	rightside.style.backgroundSize = "cover";
 	row.style.color = "white";
 	nav.style.backgroundImage = "linear-gradient("+ "to right, " + "#2A5470, #4C4177"+")";
-	document.getElementById("theme").textContent=`light theme \u263c`;
+	document.getElementById("theme").textContent=`\u263c`;
 }
 
 function lightmode () {
@@ -50,6 +50,6 @@ function lightmode () {
 	rightside.style.background="url('wall3.jpg') no-repeat fixed";
 	rightside.style.backgroundSize = "cover";
 	row.style.color = "black";
-	nav.style.backgroundImage = "linear-gradient("+ "to right, " + "white, white"+")";
-	document.getElementById("theme").textContent="dark theme \u263d";
+	nav.style.backgroundImage = "linear-gradient("+ "to right, " + "red, red"+")";
+	document.getElementById("theme").textContent="\u263d";
 }
