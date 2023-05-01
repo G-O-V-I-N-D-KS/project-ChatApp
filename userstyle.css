@@ -9,8 +9,9 @@
     /*background: linear-gradient(to right, #00b09b, #96c93d);   
     border: thick solid white;*/
     display: flex;
-    padding: 10px;
     
+    
+    flex-direction: column;
 }
 
 
@@ -48,27 +49,45 @@
 }
 .text{
     flex: 1;
-   
     margin-left: 10px;
+    border: none;
+    outline: none;
+}
+
+.text:checked {
+    border: none;
 }
 
 .send{
-    width: 80px;
+    width: 50px;
+    font-size: x-large;
     border-radius: 40px;
-    background-color: #0088cc;
+    background-color: white;
     border: none;
     margin-left: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #nav {
 
     display: none;
-    margin-right: 50px;
-   /* background-color: #0088cc;*/
-    padding: 10px
+    background-color: red;
+    padding: 10px;
+
+    position: absolute;
+    z-index: 2;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 5vw;
+    font-size: xx-large;
 }
 .row {
-    /*background: linear-gradient(to right, #00b09b, #96c93d);*/
     height: 100vh;
 }
 
@@ -83,6 +102,65 @@ a {
 
 .TA{
     display: flex;
-        
-    
+}
+
+
+form {
+    background-color: white;
+    position: fixed;
+    bottom: 5px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 40px;
+
+    width: 48vw;
+}
+
+.content li:hover,
+#nav li:hover {
+    cursor: pointer;
+}
+
+.head {
+    background-color: blue;
+    padding: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+    position: absolute;
+    left: 90px;
+    z-index: 1;
+    background-color: green;
+}
+
+
+body:has(#theme:hover) .theme {
+    display: block;
+    top: 75px;
+}
+body:has(.signout:hover) .signout {
+    display: block;
+    top: 125px;
+}
+body:has(.addfriend:hover) .addfriend {
+    display: block;
+    top: 170px;
+}
+
+#chat-list li {
+    border: solid thin yellow;
+}
+
+#chat-list:nth-child(odd) {
+    background-color: #eaeaed;
 }
